@@ -101,6 +101,5 @@
   "validation_errors": {
     "client_phone" : ["Incorrect phone format"],
     "date_from" : ["Date must be today or in future"]
-  }
 }
 ```
