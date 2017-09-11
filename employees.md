@@ -11,18 +11,20 @@
 ### Ответ
 Успешный ответ приходит с кодом ```200 OK``` и содержит тело:
 ```JSON
-[
-  {
-    "employee_id": 1,
-    "name": "Eli Hansen",
-    "avatar": "http://infogroup.online/img/crm/avatar/avatar100.jpg"
-  },
-  {
-    "employee_id": 2,
-    "name": "Helena Fisher",
-    "avatar": "http://infogroup.online/img/crm/avatar/avatar100.jpg"
-  }
-]
+{
+  [
+    {
+      "employee_id": 1,
+      "name": "Eli Hansen",
+      "avatar": "http://infogroup.online/img/crm/avatar/avatar100.jpg"
+    },
+    {
+      "employee_id": 2,
+      "name": "Helena Fisher",
+      "avatar": "http://infogroup.online/img/crm/avatar/avatar100.jpg"
+    }
+  ]
+}
 ```
 
 ## Свободное время для записи у сотрудника
@@ -39,15 +41,16 @@
 
 Успешный ответ приходит с кодом ```200 OK``` и содержит тело:
 ```JSON
-[
-  {
-    "work_start": "2017-05-23 11:00:00",
-    "work_end": "2017-05-23 15:00:00"
-  },
-  {
-    "work_start": "2017-05-23 16:00:00",
-    "work_end": "2017-05-23 20:00:00"
-  }
-]
-
+{
+  [
+    {
+      "work_start": "2017-05-23 11:00:00",
+      "work_end": "2017-05-23 15:00:00"
+    },
+    {
+      "work_start": "2017-05-23 16:00:00",
+      "work_end": "2017-05-23 20:00:00"
+    }
+  ]
+}
 ```
