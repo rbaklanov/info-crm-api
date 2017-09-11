@@ -1,10 +1,12 @@
  ## Данные клиента
  ```GET http://infogroup.online/api/v1/mobile/clientData?client_id=CLIENT_ID&lang=ru```
  
- где ```client_id``` - идентификатор клиента,
+ где ```client_id``` - идентификатор клиента.
  
  ### Заголовки
  ```Authorization: Bearer ACCESS_TOKEN```
+ 
+ Возвращает информацию о клиенте с заданным идентификатором.
  
  ### Ответ
  Успешный ответ приходит с кодом ```200 OK``` и содержит тело:
@@ -24,7 +26,7 @@
 ## Поиск клиента
 ```GET http://infogroup.online/api/v1/mobile/searchClient?search_str=960```
 
-где ```search_str``` - строка поиска
+где ```search_str``` - строка поиска.
 
 ### Заголовки
 ```Authorization: Bearer ACCESS_TOKEN```
@@ -43,7 +45,7 @@
 ```GET http://infogroup.online/api/v1/mobile/appointmentsForDate?day=2017-02-27&lang=ru&client_id=23```
 
 где ```day``` - день, за который необходимо получить журнал записи,
-```client_id``` - идентификатор клиента(Если ```client_id``` не указан возвращается информации обо всех записях на день для организации авторизованного пользователя).
+```client_id``` - идентификатор клиента (если ```client_id``` не указан возвращается информации обо всех записях на день для организации авторизованного пользователя).
 
 ### Заголовки
 ```Authorization: Bearer ACCESS_TOKEN```
