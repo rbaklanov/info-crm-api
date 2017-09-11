@@ -20,13 +20,15 @@ Client ID и Client Secret понадобятся для авторизации.
 ## Получение авторизации
 ```POST http://infogroup.online/oauth/token```
 
-```PHP
-grant_type: 'password',
-client_id: CLIENT_ID,
-client_secret: CLIENT_SECRET,
-username: USER_LOGIN,
-password: USER_PASSWORD,
-scope: '*'
+```JSON
+{
+  grant_type: 'password',
+  client_id: CLIENT_ID,
+  client_secret: CLIENT_SECRET,
+  username: USER_LOGIN,
+  password: USER_PASSWORD,
+  scope: '*'
+}
 ```
 
 ### Ответ
