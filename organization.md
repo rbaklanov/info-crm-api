@@ -41,38 +41,37 @@
 ```
 {
   [
-  {
-    "service_id": 5,
-    "name": "eos",
-    "description": "Recusandae id dolores molestiae. Occaecati officiis amet suscipit minus. Perferendis ut autem exercitationem sunt maxime.",
-    "price": 500,
-    "duration": "02:00:00",
-    "employees": [
-      {
-        "employee_id": 5,
-        "name": "Adolfo Nitzsche"
-      },
-      {
-        "employee_id": 2,
-        "name": "Helena Fisher"
-      }
-    ]
-  },
+    {
+      "service_id": 5,
+      "name": "eos",
+      "description": "Recusandae id dolores molestiae. Occaecati officiis amet suscipit minus. Perferendis sunt maxime.",
+      "price": 500,
+      "duration": "02:00:00",
+      "employees": [
+        {
+          "employee_id": 5,
+          "name": "Adolfo Nitzsche"
+        },
+        {
+          "employee_id": 2,
+          "name": "Helena Fisher"
+        }
+      ]
+    },
 
-  {
-    "service_id": 7,
-    "name": "et",
-    "description": "Ut deleniti et alias sed quo veritatis. Veritatis nesciunt aliquam repellat nesciunt enim. Tenetur ipsum iste voluptas quo. Eos eligendi dolor praesentium nostrum est et voluptatem quaerat.",
-    "price": 500,
-    "duration": "00:30:00",
-    "employees": [
-      {
-        "employee_id": 4,
-        "name": "Percival Pagac"
-      }
-    ]
-  }
-]
-
+    {
+      "service_id": 7,
+      "name": "et",
+      "description": "Ut deleniti et alias sed quo veritatis. Veritatis nesciunt aliquam repellat nesciunt enim.",
+      "price": 500,
+      "duration": "00:30:00",
+      "employees": [
+        {
+          "employee_id": 4,
+          "name": "Percival Pagac"
+        }
+      ]
+    }
+  ]
 }
 ```
