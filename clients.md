@@ -8,13 +8,13 @@
  Успешный ответ приходит с кодом ```200 OK``` и содержит тело:
  ```JSON
  "name": "John Doe",
-  "phone": "скрыт",
-  "email": null,
-  "gender": "Мужской",
-  "discount": 0,
-  "birthday": null,
-  "comment": "Some additional info",
-  "total_bought": "0.0000",
-  "total_paid": "0.0000",
-  "online_reservation_available": 1
+ "phone": "скрыт",
+ "email": null,
+ "gender": "Мужской",
+ "discount": 0,
+ "birthday": null,
+ "comment": "Some additional info",
+ "total_bought": "0.0000",
+ "total_paid": "0.0000",
+ "online_reservation_available": 1
 ```
