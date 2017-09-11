@@ -73,3 +73,116 @@
   }
 ]
 ```
+
+## Создание клиента
+```POST http://infogroup.online/api/v1/mobile/client```
+
+где 
+
+обязательные поля
+```'name'``` - имя и фамилия клиента
+```'phone'``` - номер телефона клиента,
+
+опциональные поля:
+```'email'``` - адрес электронной почты сотрудника.
+
+### Заголовки
+```Authorization: Bearer ACCESS_TOKEN```
+
+Создает сотрудника с указанными реквизитами.
+
+### Ответ
+Успешный ответ приходит с кодом ```200 OK``` и содержит тело:
+```
+{
+  "success": true,
+  "error": ""
+}
+
+ИЛИ
+
+{
+  "success": false,
+  "validation_errors": {
+    "phone" : ["Incorrect phone format"],
+    "email" : ["Incorrect email format"]
+  }
+}
+```
+
+## Редактирование клиента
+```POST http://infogroup.online/api/v1/mobile/editClient```
+
+где
+обязательное поле:
+```'client_id'``` - идентификатор клиента
+
+Опциональные поля:
+```'name'``` - новое имя и фамилия клиента
+```'phone'``` - новый номер телефона клиента
+```'email'``` - новый адрес электронной почты клиента
+
+### Заголовки
+```Authorization: Bearer ACCESS_TOKEN```
+
+Позволяет изменить ФИО, номер телефона, email клиента с заданным id.
+
+### Ответ
+Успешный ответ приходит с кодом ```200 OK``` и содержит тело:
+```
+{
+  "success": true,
+  "error": ""
+}
+
+ИЛИ
+{
+  "success": false,
+  "validation_errors":
+  {
+    "email":
+    [
+      "The email must be a valid email address."
+    ],
+    "phone":
+    [
+      "phone may contain only numbers and +-() signs"
+    ]
+  }
+}
+
+```
+
+## Список клиентов
+```GET http://infogroup.online/api/v1/mobile/clients?lang=ru&branch_id=1```
+
+где ```branch_id``` - идентификатор филиала.
+
+### Заголовки
+```Authorization: Bearer ACCESS_TOKEN```
+
+Возвращает перечень клиентов филиала с заданным идентификатором.
+
+### Ответ
+Успешный ответ приходит с кодом ```200 OK``` и содержит тело:
+```
+{
+  [
+    {
+        "id": 1,
+        "name": "Carlee Deckow",
+        "phone": "609.514.9360"
+    },
+    {
+        "id": 2,
+        "name": "Lucio Littel",
+        "phone": "418.490.8005"
+    },
+    {
+        "id": 3,
+        "name": "Montana Senger",
+        "phone": "(912) 976-5820 x970"
+    }
+ ]
+}
+```
