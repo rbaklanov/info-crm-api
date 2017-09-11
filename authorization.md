@@ -15,4 +15,4 @@ Password grant client created successfully.
 Client ID: 6
 Client Secret: OJCTCTD3Duwuw89X2rQvf8AaN48bNRyeSwIgEoKj
 ```
-Client ID и Client Secret понадобятся для авторизации. В дальнейшем будут обозначаться как```client_id``` и ```client_secret```.
+Client ID и Client Secret понадобятся для авторизации. В дальнейшем будут обозначаться как```client_id```и```client_secret```.
