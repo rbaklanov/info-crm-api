@@ -1,5 +1,6 @@
  ## Данные клиента
  ```GET http://infogroup.online/api/v1/mobile/clientData?client_id=CLIENT_ID&lang=ru```
+ 
  где ```client_id``` - идентификатор клиента,
  
  ### Заголовки
@@ -22,6 +23,7 @@
 
 ## Поиск клиента
 ```GET http://infogroup.online/api/v1/mobile/searchClient?search_str=960```
+
 где ```search_str``` - строка поиска
 
 ### Заголовки
@@ -31,7 +33,7 @@
 
  ### Ответ
  Успешный ответ приходит с кодом ```200 OK``` и содержит тело:
- ```JSON
+ ```PHP
 {
   [ 6, 10, 14, 21 ]
 }
@@ -39,6 +41,7 @@
 
 ## Журнал записи
 ```GET http://infogroup.online/api/v1/mobile/appointmentsForDate?day=2017-02-27&lang=ru&client_id=23```
+
 где ```day``` - день, за который необходимо получить журнал записи,
 ```client_id``` - идентификатор клиента(Если ```client_id``` не указан возвращается информации обо всех записях на день для организации авторизованного пользователя).
 
