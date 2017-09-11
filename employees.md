@@ -54,3 +54,53 @@
   ]
 }
 ```
+
+## Создание записи к сотруднику
+```POST http://infogroup.online/api/v1/mobile/appointment```
+
+Обязательные поля:
+```'client_name'``` - наименование клиента
+```'client_phone'``` - номер телефона клиента
+```'service_id'``` - идентификатор услуги
+```'employee_id'``` - идентификатор сотрудника
+```'date_from'``` - дата записи
+```'time_from'``` - время записи
+```'duration_hours'``` - длительность оказания услуги(в часах)
+```'duration_minutes'``` - длительность оказания услуги(в минутах)
+
+Опциональные поля:
+```'client_email'``` - адрес электронной почты клиента
+```'note'``` - заметка
+
+### Заголовки
+```Authorization: Bearer ACCESS_TOKEN```
+```Content-Type: application/x-www-form-urlencoded```
+
+Создает запись на услугу к сотруднику на заданную дату и время.
+
+### Ответ
+
+Успешный ответ приходит с кодом ```200 OK``` и содержит тело:
+```
+{
+  "success": true,
+  "error": ""
+}
+
+ИЛИ
+
+{
+  "success": false,
+  "error": "Employee data error"
+}
+
+ИЛИ
+
+{
+  "success": false,
+  "validation_errors": {
+    "client_phone" : ["Incorrect phone format"],
+    "date_from" : ["Date must be today or in future"]
+  }
+}
+```
