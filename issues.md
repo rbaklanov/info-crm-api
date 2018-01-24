@@ -5,6 +5,5 @@
 
 ### Решение:
 
-```sudo chown www-data:www-data storage/oauth-*.key
-sudo chmod 600 storage/oauth-*.key
-```
+```sudo chown www-data:www-data storage/oauth-*.key```
+```sudo chmod 600 storage/oauth-*.key```
