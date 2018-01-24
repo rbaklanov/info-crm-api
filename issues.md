@@ -1,10 +1,9 @@
-Проблема: 
+**Проблема:**
 
 При отсутствии возможности залогиниться в систему с мобильного устройства проверить на сервере владельца и права доступа к файлам ключей, 
 которые ипользуются в OAuth2.
 
-Решение: 
+**Решение:**
 
-sudo chown www-data:www-data storage/oauth-*.key
-
-sudo chmod 600 storage/oauth-*.key
+```sudo chown www-data:www-data storage/oauth-*.key```
+sudo chmod 600 storage/oauth-*.key```
